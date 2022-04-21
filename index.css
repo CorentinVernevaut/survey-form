@@ -1,22 +1,44 @@
-body, html {
-    height: auto;
-}
-
 body {
     padding: 0 20% 0 20%;
     background: url('./background-img.jpg') no-repeat center center fixed;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #main {
     padding: 2%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 1000px) {
     body {
         padding: 0 5% 0 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    body, html, #main {
+        height: auto;
+    }
+}
+
+@media screen and (max-height: 775px) {
+    body {
+        padding-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    body, html, #main {
+        height: auto;
     }
 }
 
