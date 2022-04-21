@@ -3,7 +3,6 @@
 
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="https://unpkg.com/plain-css@latest/dist/plain.min.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 
@@ -16,69 +15,61 @@
             <p id="description">Give us your informations and your preference about your technology attention !</p>
         </div>
 
-        <form id="survey-form" class="pl-container">
+        <form id="survey-form">
 
-            <div class="pl-row">
-                <div class="pl-col-md-6">
-                    <label id="name-label">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                </div>
-                <div class="pl-col-md-6">
-                    <label id="email-label">Email</label>
-                    <input type="email" id="email" placeholder="Enter your Email" required>
-                </div>
+            <div class="survey-form-group">
+                <label id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
             </div>
 
-            <div class="pl-row">
-                <div class="pl-col">
-                    <label id="number-label">Years of work experience</label>
-                    <input type="number" id="number" min="0" max="30"
-                        placeholder="Enter the number of years of work experience">
-                </div>
+            <div class="survey-form-group">
+                <label id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
             </div>
 
-            <div class="pl-row">
-                <div class="pl-col">
-                    <label id="dropdown-label">Which type of development do you prefer ?</label>
-                    <select id="dropdown">
-                        <option disabled selected>Select current role</option>
-                        <option value="backend">Backend</option>
-                        <option value="frontend">Frontend</option>
-                        <option value="both">Both</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
+            <div class="survey-form-group">
+                <label id="number-label">Years of work experience</label>
+                <input type="number" id="number" min="0" max="30"
+                    placeholder="Enter the number of years of work experience">
             </div>
 
-            <div class="pl-row">
-                <div class="pl-col-md-6">
-                    <label id="radio-label">Are you comfortable with the French language ?</label>
-                    <label for="definitely">
-                        <input type="radio" id="definitely" name="language" value="definitely"> Definitely</label>
-                    <label for="approximately">
-                        <input type="radio" id="approximately" name="language" value="approximately">
-                        Approximately</label>
-                    <label for="notReally">
-                        <input type="radio" id="notReally" name="language" value="notReally">
-                        Not really</label>
-                </div>
-                <div class="pl-col-md-6">
-                    <label id="checkbox-label">Which type of technology do you want to learn in the future ?</label>
-                    <label for="blockchain">
-                        <input type="checkbox" id="blockchain" name="technology" value="blockchain"> Blockchain</label>
-                    <label for="web">
-                        <input type="checkbox" id="web" name="technology" value="web"> Web</label>
-                    <label for="mobile">
-                        <input type="checkbox" id="mobile" name="technology" value="mobile"> Mobile</label>
-                    <label for="ia">
-                        <input type="checkbox" id="ia" name="technology" value="ia"> Artificial intelligence</label>
-                </div>
+            <div class="survey-form-group">
+                <label id="dropdown-label">Which type of development do you prefer ?</label>
+                <select id="dropdown">
+                    <option disabled selected>Select current role</option>
+                    <option value="backend">Backend</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="both">Both</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
 
-            <div class="pl-row">
-                <div class="pl-col">
-                    <textarea id="textarea" placeholder="Additional comments"></textarea>
-                </div>
+            <div class="survey-form-group">
+                <label id="radio-label">Are you comfortable with the French language ?</label>
+                <label for="definitely">
+                    <input type="radio" id="definitely" name="language" value="definitely"> Definitely</label>
+                <label for="approximately">
+                    <input type="radio" id="approximately" name="language" value="approximately">
+                    Approximately</label>
+                <label for="notReally">
+                    <input type="radio" id="notReally" name="language" value="notReally">
+                    Not really</label>
+            </div>
+
+            <div class="survey-form-group">
+                <label id="checkbox-label">Which type of technology do you want to learn in the future ?</label>
+                <label for="blockchain">
+                    <input type="checkbox" id="blockchain" name="technology" value="blockchain"> Blockchain</label>
+                <label for="web">
+                    <input type="checkbox" id="web" name="technology" value="web"> Web</label>
+                <label for="mobile">
+                    <input type="checkbox" id="mobile" name="technology" value="mobile"> Mobile</label>
+                <label for="ia">
+                    <input type="checkbox" id="ia" name="technology" value="ia"> Artificial intelligence</label>
+            </div>
+
+            <div class="survey-form-group">
+                <textarea id="textarea" placeholder="Additional comments"></textarea>
             </div>
 
             <div id="submit-content">
